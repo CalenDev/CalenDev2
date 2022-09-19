@@ -21,8 +21,9 @@ var router = express.Router();
 router.get('/', async function (req, res, next) {
   //db에서 가져오기
   // const list = await knex('user').select('*').then(console.log);
-  const list = knex2;
+  const list = await knex2;
   console.log(list);
+
   res.send(list);
 });
 
