@@ -13,14 +13,17 @@
  */
 
 var express = require('express');
-
-const db = require('../../models');
+const knex = require('../../config/knex');
+const knex2 = require('../../models/user');
 var router = express.Router();
 
 /* GET users listing. */
 router.get('/', async function (req, res, next) {
   //db에서 가져오기
-  res.send('test');
+  // const list = await knex('user').select('*').then(console.log);
+  const list = knex2;
+  console.log(list);
+  res.send(list);
 });
 
 module.exports = router;

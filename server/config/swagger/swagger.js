@@ -9,7 +9,7 @@ const options = {
       description: 'This is sample server for testing Calendev App',
     },
     //testing in local
-    host: 'localhost:8000',
+    host: `localhost:${process.env.PORT}`,
     basePath: '/',
   },
   apis: ['./api/routes/*.js', './swagger/*'],

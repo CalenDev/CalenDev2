@@ -14,9 +14,11 @@ const pool = mysql.createPool({
 
 let sql = 'SELECT * FROM user';
 
-pool.execute(sql, function (err, res) {
+pool.execute(sql, async function (err, res) {
+  console.log('===Trying to Connect Database===');
+
   if (err) throw err;
-  console.log(res);
+  await console.log(res);
 });
 
 //다른 파일에서도 접근가능하게 모듈화.
