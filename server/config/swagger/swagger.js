@@ -9,10 +9,10 @@ const options = {
       description: 'This is sample server for testing Calendev App',
     },
     //testing in local
-    host: `localhost:${process.env.PORT}`,
+    host: `localhost:8000`,
     basePath: '/',
   },
-  apis: ['./api/routes/*.js', './swagger/*'],
+  apis: ['./api/routes/users/*.js', './swagger/*'],
 };
 
 const specs = swaggereJsdoc(options);
