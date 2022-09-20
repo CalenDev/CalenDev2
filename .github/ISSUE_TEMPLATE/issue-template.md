@@ -1,11 +1,14 @@
 ---
 name: Issue template
 about: 프로젝트의 Issue에 대해 설명합니다.
-title: ''
+title: "[ISSUE]"
 labels: ''
 assignees: ''
 
 ---
+
+## Branch
+`DEV-2/DEV-3/DEV-132`
 
 ## Description
 *작업에 대해 명확하고 간결하게 설명합니다.*
